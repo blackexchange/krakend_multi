@@ -1,0 +1,422 @@
+{
+    "$schema": "https://www.krakend.io/schema/v3.json",
+    "version": 3,
+    "name": "BFF KrakenD Hepta",
+    "timeout": "10s",
+    "port": 8080,
+    "extra_config": {"security/cors":{"allow_credentials":true,"allow_headers":["Origin","Authorization","Content-Type","Accept","X-Auth-Token","Accept-Encoding","Accept-Language","Connection","Host","Origin","Referer","Sec-Fetch-Dest","Sec-Fetch-Mode","Sec-Fetch-Site","User-Agent","sec-ch-ua","sec-ch-ua-mobile","sec-ch-ua-platform"],"allow_methods":["HEAD","POST","PUT","PATCH","DELETE","OPTIONS","GET"],"allow_origins":["http*"],"debug":true,"expose_headers":["*"]}},
+    "host": ["https://certidoes-tst.creasp.org.br"],
+    "endpoints": [
+        
+        
+        
+
+        
+        {
+            "endpoint": "/API/{param01}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "POST",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "POST",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "POST",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "POST",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "POST",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+        
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "GET",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "GET",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "GET",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "GET",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "GET",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+        
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "PUT",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "PUT",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "PUT",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "PUT",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "PUT",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+        
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "DELETE",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "DELETE",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "DELETE",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "DELETE",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+
+        ,
+        {
+            "endpoint": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "DELETE",
+            "backend": [
+                {
+                    "url_pattern": "/API/{param01}/{param02}/{param03}/{param04}/{param05}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                                  
+                }
+        }
+        
+        
+        
+    ]
+}

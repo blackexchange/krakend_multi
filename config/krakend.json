@@ -1,0 +1,36 @@
+{
+    "$schema": "https://www.krakend.io/schema/v3.json",
+    "version": 3,
+    "name": "BFF KrakenD Hepta",
+    "timeout": "10s",
+    "port": {{ .service.port }},
+    "extra_config": {{ marshal .service.extra_config }},
+    "host": {{ marshal .service.default_hosts }},
+    "endpoints": [
+        {{ range $idx, $endpoint := .endpoint.endpoint_list }}
+        {{ range $midx, $method := $.endpoint.list_methods }}
+        {{ range $pidx, $param := $.endpoint.list_params }}
+
+        {{ if or $idx $midx $pidx }},{{ end }}
+        {
+            "endpoint": "{{ $endpoint.endpoint }}{{ range $i, $p := $.endpoint.list_params }}{{ if le $i $pidx }}/{{ printf "{param%s}" $p }}{{ end }}{{ end }}",
+            "input_query_strings": ["*"],
+            "input_headers": ["*"],
+            "method": "{{ $method }}",
+            "backend": [
+                {
+                    "url_pattern": "{{ $endpoint.backend }}{{ range $i, $p := $.endpoint.list_params }}{{ if le $i $pidx }}/{{ printf "{param%s}" $p }}{{ end }}{{ end }}",
+                    "extra_config": {
+                       
+                    }
+                }
+            ], 
+            "extra_config": {
+                {{ include "auth0_security.tmpl" }}      
+                }
+        }
+        {{ end }}
+        {{ end }}
+        {{ end }}
+    ]
+}

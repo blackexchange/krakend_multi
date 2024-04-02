@@ -1,0 +1,15 @@
+version: "3"
+services:
+  krakend:
+    image: devopsfaith/krakend:watch
+    volumes:
+      - "./:/etc/krakend/"
+    environment:
+      - FC_ENABLE=1
+      - FC_OUT=krakend.json
+      - FC_PARTIALS=config/partials
+      - FC_SETTINGS=config/settings
+      - FC_TEMPLATES=config/templates
+    command: ["run","-c","config/krakend.json"]
+    ports:
+      - "8080:8080"

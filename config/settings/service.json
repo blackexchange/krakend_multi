@@ -1,0 +1,32 @@
+{
+    "port": 8080,
+    "default_hosts": [
+        "https://certidoes-tst.creasp.org.br"
+    ],
+    "extra_config": {
+        "security/cors": {
+            "allow_origins": [
+                "http*"
+            ],
+            "allow_methods": ["HEAD" ,"POST","PUT","PATCH","DELETE", "OPTIONS", "GET"],
+            "allow_headers": ["Origin", "Authorization", "Content-Type", "Accept", "X-Auth-Token",
+            "Accept-Encoding",
+            "Accept-Language",
+            "Connection",
+            "Host",
+            "Origin",
+            "Referer",
+            "Sec-Fetch-Dest",
+            "Sec-Fetch-Mode",
+            "Sec-Fetch-Site",
+            "User-Agent",
+            "sec-ch-ua",
+            "sec-ch-ua-mobile",
+            "sec-ch-ua-platform"],
+            "expose_headers": ["*"],
+            "allow_credentials": true,
+            "debug": true
+          
+        }       
+    }
+}
